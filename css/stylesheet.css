@@ -34,10 +34,10 @@ main {
 
 .Sidebar {
   text-align: center;
-  min-width: 10%;
+  max-width: 15%;
   background-color: rgb(27, 180, 27);
   border: 2px solid rgb(24, 23, 23);
-  font-size: 1.3rem;
+  font-size: 100%;
 }
 
 #Menu {
@@ -58,7 +58,6 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  max-width: 90%;
 }
 
 #intro {
@@ -106,7 +105,7 @@ body {
   margin: 1rem;
   margin-bottom: 0rem;
   padding-left: 1rem;
-  width: 50%;
+  width: 100%;
 }
 
 #int {
@@ -117,7 +116,7 @@ body {
   margin-right: 0rem;
   margin-bottom: 0rem;
   padding-left: 1rem;
-  width: 50%;
+  width: 100%;
 }
 
 footer {
@@ -171,70 +170,3 @@ footer {
   animation-iteration-count: infinite;
 }
 
-/* Responsiveness using media*/
-@media only screen and (max-width: 600px) {
-  body {
-    display: inline-block;
-    align-items: center;
-  }
-  
-  main {
-    display: inline-block;
-    align-items: center;
-  }
-
-  .Sidebar {
-    width:90%;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .self {
-    display: contents;
-  }
-  
-  #Skill {
-    width: 90%;
-    margin-top: 0rem;
-  }
-
-  #int {
-    width: 90%;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-  }
-
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    display:inline-block;
-  }
-  
-  main {
-    display: inline-block;
-    align-items: center;
-  }
-
-  .Sidebar {
-    width:90%;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .self {
-    display: contents;
-  }
-  
-  #Skill {
-    width: 90%;
-    margin-top: 1rem;
-  }
-
-  #int {
-    width: 90%;
-    margin-bottom: 0rem;
-    margin-top: 1rem;
-  }
-
-}
