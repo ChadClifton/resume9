@@ -1,0 +1,240 @@
+header {
+  text-align: center;
+  background-image: url("/images/background.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 41.5%;
+  background-color: #5a1b6e;
+  height: 18rem;
+  margin-bottom: 1rem;
+}
+
+picture{
+  height: 9.5rem;
+  width: 9.5rem;
+}
+
+#profilepicture{
+  height: 9.5rem;
+  width: 9.5rem;
+  border-radius: 50%;
+  border: 3px solid rgb(22, 204, 22);
+}
+
+#Statement {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
+}
+
+.Sidebar {
+  text-align: center;
+  min-width: 10%;
+  background-color: rgb(27, 180, 27);
+  border: 2px solid rgb(24, 23, 23);
+  font-size: 1.3rem;
+}
+
+#Menu {
+  list-style-type: none;
+  padding: 0;
+  padding: 0.5rem;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  background-color: rgb(235, 232, 253);
+  display: flex;
+  flex-direction: column;
+}
+
+.Contents {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  max-width: 90%;
+}
+
+#intro {
+  border: 2.5px solid rgb(24, 23, 23);
+  border-radius: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 1rem;
+  margin-top: 0rem;
+  margin-right: 0rem;
+}
+
+#Edu {
+  border: 2.5px solid rgb(24, 23, 23);
+  border-radius: 1rem;
+  padding-right: 1rem;
+  margin: 1rem;
+  padding-left: 1rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+}
+
+#Exp {
+  padding-right: 1rem;
+  border-radius: 1rem;
+  border: 2.5px solid rgb(24, 23, 23);
+  margin: 1rem;
+  padding-left: 1rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.self {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#Skill {
+  padding-right: 1rem;
+  border-radius: 1rem;
+  border: 2.5px solid rgb(24, 23, 23);
+  margin: 1rem;
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+  width: 50%;
+}
+
+#int {
+  padding-right: 1rem;
+  border-radius: 1rem;
+  border: 2.5px solid rgb(24, 23, 23);
+  margin: 1rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+  width: 50%;
+}
+
+footer {
+  background-color: #5a1b6e;
+  text-align: center;
+  border: 2.5px solid rgb(24, 23, 23);
+  margin-top: 1rem;
+}
+
+#details {
+  width: 3.5rem;
+  height: auto;
+  border: 2.5px solid rgb(24, 23, 23);
+  border-radius: 50%;
+}
+
+/* The animation code */
+@keyframes animatedRotate {
+  0% {
+    filter: invert(0%);
+    border-radius: 0%;
+  }
+
+  25% {
+    filter: invert(50%);
+    transform: rotate(90deg);
+  }
+
+  50% {
+    filter: invert(100%);
+    transform: rotate(180deg);
+  }
+
+  75% {
+    filter: invert(50%);
+    transform: rotate(270deg);
+  }
+
+  100% {
+    filter: invert(0%);
+    transform: rotate(360deg);
+  }
+}
+
+/* The element to apply the animation to */
+#details:hover {
+  width: 3.5rem;
+  height: 3.5rem;
+  animation-name: animatedRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Responsiveness using media*/
+@media only screen and (max-width: 600px) {
+  body {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  main {
+    display: inline-block;
+    align-items: center;
+  }
+
+  .Sidebar {
+    width:90%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .self {
+    display: contents;
+  }
+  
+  #Skill {
+    width: 90%;
+    margin-top: 0rem;
+  }
+
+  #int {
+    width: 90%;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display:inline-block;
+  }
+  
+  main {
+    display: inline-block;
+    align-items: center;
+  }
+
+  .Sidebar {
+    width:90%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .self {
+    display: contents;
+  }
+  
+  #Skill {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  #int {
+    width: 90%;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+
+}
